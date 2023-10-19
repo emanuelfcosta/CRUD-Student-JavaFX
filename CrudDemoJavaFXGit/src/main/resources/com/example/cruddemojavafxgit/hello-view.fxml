@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="468.0" prefWidth="627.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cruddemojavafxgit.HelloController">
+    <children>
+        <Label layoutX="165.0" layoutY="14.0" text="Student CRUD">
+            <font>
+                <Font size="37.0" />
+            </font>
+        </Label>
+        <Pane layoutX="14.0" layoutY="239.0" prefHeight="170.0" prefWidth="539.0">
+            <children>
+                <Label layoutX="24.0" layoutY="45.0" text="Name:" textFill="#eb1919">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+                <Label layoutX="14.0" layoutY="85.0" text="Address:" textFill="#dd0a0a">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+                <Label layoutX="26.0" layoutY="133.0" text="Email:" textFill="#dd1010">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="txtName" layoutX="93.0" layoutY="45.0" prefHeight="25.0" prefWidth="353.0" />
+                <TextField fx:id="txtAddress" layoutX="94.0" layoutY="86.0" prefHeight="25.0" prefWidth="353.0" />
+                <TextField fx:id="txtEmail" layoutX="94.0" layoutY="133.0" prefHeight="25.0" prefWidth="353.0" />
+            </children>
+        </Pane>
+        <TableView fx:id="table" layoutX="14.0" layoutY="60.0" prefHeight="170.0" prefWidth="539.0">
+            <columns>
+                <TableColumn fx:id="IDColum" prefWidth="73.0" text="ID" />
+                <TableColumn fx:id="NameColum" prefWidth="101.0" text="Name" />
+                <TableColumn fx:id="AddressColum" prefWidth="75.0" text="Address" />
+                <TableColumn fx:id="EmailColum" prefWidth="75.0" text="Email" />
+            </columns>
+        </TableView>
+        <Button fx:id="btnAdd" layoutX="125.0" layoutY="416.0" mnemonicParsing="false" onAction="#Add" prefHeight="26.0" prefWidth="72.0" text="Add" textFill="#3e26c6">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
+        <Button fx:id="btnUpdate" layoutX="208.0" layoutY="416.0" mnemonicParsing="false" onAction="#Update" prefHeight="35.0" prefWidth="93.0" text="Update" textFill="#3e26c6">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
+        <Button fx:id="btnDelete" layoutX="311.0" layoutY="416.0" mnemonicParsing="false" onAction="#Delete" prefHeight="35.0" prefWidth="93.0" text="Delete" textFill="#3e26c6">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>
